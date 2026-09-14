@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>Organize</title>
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">ORGANIZE</div>
+      <h1 id="title">My Lists</h1>
+    </div>
+    <button id="searchBtn" class="icon-btn" aria-label="Search">⌕</button>
+  </header>
+
+  <main id="main"></main>
+
+  <div id="searchPanel" class="search-panel hidden">
+    <div class="search-row">
+      <button id="closeSearch" class="icon-btn">←</button>
+      <input id="searchInput" placeholder="Search lists..." autocomplete="off">
+    </div>
+    <div id="searchResults"></div>
+  </div>
+
+  <button id="fab" class="fab">＋</button>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="sheet">
+    <div class="sheet-head">
+      <h2 id="modalTitle">Add</h2>
+      <button id="cancelModal" class="icon-btn">×</button>
+    </div>
+    <input id="nameInput" class="text-input" placeholder="Name">
+    <textarea id="noteInput" class="text-input note-input" placeholder="Optional note"></textarea>
+    <button id="saveModal" class="primary">Save</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
